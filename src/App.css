@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* To keep the floating emojis within the screen */
 }
 
 h1 {
@@ -23,22 +24,52 @@ p {
 }
 
 .birthday-image {
-  max-width: 100%;
+  max-width: 70vh;  /* Ensures the image doesn’t exceed the container width */
   height: auto;
   border-radius: 10px;
-  margin-bottom: 20px;
+  width: 60vw;      /* Width is 60% of the viewport width */
+  max-height: 70vh; /* Ensures the image won't take up more than 70% of the viewport height */
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 1.2em;
-  color: white;
-  background-color: #ff6f61;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+@media (max-width: 768px) {
+  .birthday-image {
+    width: 80vw;   /* Makes the image wider on smaller screens */
+    max-height: 50vh; /* Reduces height to avoid overflow on smaller screens */
+  }
 }
 
-button:hover {
-  background-color: #ff8a65;
+@media (max-width: 480px) {
+  .birthday-image {
+    width: 90vw;   /* Full width on very small screens */
+    max-height: 40vh; /* Limits height further to make it more responsive */
+  }
+}
+
+/* Kiss animation */
+.kisses-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.kiss {
+  position: absolute;
+  bottom: -50px;
+  animation: float 5s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
 }
