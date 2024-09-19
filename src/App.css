@@ -1,0 +1,44 @@
+.app {
+  text-align: center;
+  padding: 20px;
+  background-color: #fbe9e7;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #ff6f61;
+  font-family: 'Cursive', sans-serif;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: #6d4c41;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.birthday-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff8a65;
+}
