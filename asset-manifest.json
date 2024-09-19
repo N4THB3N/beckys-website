@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/beckys-birthday/static/css/main.d31076d1.css",
+    "main.js": "/beckys-birthday/static/js/main.bf59ddb4.js",
+    "static/js/453.4fb4d3ad.chunk.js": "/beckys-birthday/static/js/453.4fb4d3ad.chunk.js",
+    "static/media/our-picture.jpg": "/beckys-birthday/static/media/our-picture.674955892427459130a0.jpg",
+    "index.html": "/beckys-birthday/index.html",
+    "main.d31076d1.css.map": "/beckys-birthday/static/css/main.d31076d1.css.map",
+    "main.bf59ddb4.js.map": "/beckys-birthday/static/js/main.bf59ddb4.js.map",
+    "453.4fb4d3ad.chunk.js.map": "/beckys-birthday/static/js/453.4fb4d3ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d31076d1.css",
+    "static/js/main.bf59ddb4.js"
+  ]
+}
